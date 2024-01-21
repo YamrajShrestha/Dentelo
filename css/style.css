@@ -117,6 +117,10 @@ button.btn:is(:hover, :focus) {
   color: #365ed9;
 }
 
+.header-top .social-icons .bx:is(:hover, :focus) {
+  background-color: transparent;
+}
+
 .navbar {
   background: transparent;
 }
@@ -364,24 +368,24 @@ footer {
   font-size: 24px;
 }
 
-.footer-top li a{
+.footer-top li a {
   display: inline;
   color: #b1bfd8;
 }
 
-.footer-bottom{
+.footer-bottom {
   background-color: #081730;
   color: #fff;
 }
 
-.footer-bottom .social-icons .bx{
+.footer-bottom .social-icons .bx {
   background-color: #ffffff33;
   padding: 10px;
   transition: 0.25s ease;
 }
 
-.social-icons .bx:is(:hover, :focus){
-background-color: #365ed9;
+.social-icons .bx:is(:hover, :focus) {
+  background-color: #365ed9;
 }
 
 /* #BACK TO TOP  */
