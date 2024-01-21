@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+a,
+img,
+span,
+input,
+button {
+  display: block;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: #ffffff !important;
+  font-family: "Roboto", sans-serif;
+}
+
+/* #REUSED STYLE  */
+
+.section {
+  padding-block: 120px;
+}
+
+.section-subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  color: #365ed9;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 55px;
+  color: #00173d;
+  margin-block: 0 30px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #787878;
+}
+
+button.btn {
+  background-image: linear-gradient(
+    90deg,
+    rgb(10, 153, 230) 0%,
+    rgb(54, 94, 217) 100%
+  );
+  box-shadow: rgba(54, 94, 217, 0.3) 0px 10px 30px 0px;
+  border: none;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+button.btn:is(:hover, :focus) {
+  background-image: linear-gradient(
+    -90deg,
+    rgb(10, 153, 230) 0%,
+    rgb(54, 94, 217) 100%
+  );
+  color: #fff;
+}
+
+/* #HEADER  */
+
+.header-top {
+  background-color: #0e254e;
+  color: #fff;
+}
+
+.header-top a {
+  color: #fff;
+}
+
+.header-top :is(.bx-envelope, .bx-phone) {
+  color: #365ed9;
+}
+
+.navbar {
+  background: transparent;
+}
+
+.navbar a.logo {
+  font-weight: 800;
+  font-size: 34px;
+  color: #0e254e;
+}
+
+.navbar .nav-item a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #0e254e;
+  transition: 0.25s ease;
+}
+
+.navbar .nav-item:is(:hover, :focus-within) a {
+  color: #365ed9;
+}
+
+.hero {
+  background-image: url(../img/hero-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .hero-title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: #0e254e;
+  margin-block: 20px 30px;
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #787878;
+}
+
+.hero .btn {
+  padding: 20px 30px;
+}
+
+.hero .input-wrapper {
+  background-color: #fff;
+  padding: 15px;
+  position: relative;
+}
+
+/* #SERVICE  */
+
+.service {
+  padding-block-start: 120px;
+}
+.service .section-title {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 55px;
+  color: #00173d;
+}
+
+.service .service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+}
+
+.service .service-banner {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  align-self: center;
+}
+
+.service .card {
+  padding: 15px;
+}
+
+.service .card-icon {
+  width: 100%;
+  padding-block: 15px;
+}
+
+.service .card-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #00173d;
+}
+
+.service .card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #787878;
+}
+
+/* #DOCTOR  */
+.doctor .card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #00173d;
+  padding-block: 15px 5px;
+}
+
+.doctor .card-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #365ed9;
+}
+
+.social-link .bx {
+  color: #365ed9;
+  background-color: #becbf2;
+  border: transparent;
+  padding: 10px;
+  margin-block: 12px;
+  transition: 0.25s ease;
+}
+
+.social-link .bx:is(:hover, :focus) {
+  color: #fff;
+  background-color: #365ed9;
+}
+
+/* #CTA  */
+.cta {
+  background-color: #0e254e;
+  margin-top: 60px;
+  padding-block: 0;
+}
+
+.cta .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.cta-banner {
+  margin-block-start: -120px;
+  margin-block-end: 0;
+}
+
+.cta .section-subtitle {
+  text-transform: capitalize;
+}
+
+.cta .section-title {
+  color: #fff;
+}
+
+/* #BLOG  */
+.blog-card {
+  position: relative;
+}
+.blog-card .card-banner {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.blog-card .img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.blog-card:is(:hover, :focus-within) .img-cover {
+  transform: scale(1.1);
+}
+
+.blog-card .card-badge {
+  position: absolute;
+  left: 15px;
+  top: 220px;
+  padding: 10px 15px;
+  background-color: #365ed9;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.blog-card .card-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  margin-block: 0 15px;
+  transition: 0.25s ease;
+}
+
+.blog-card .card-title:is(:hover, :focus) {
+  color: #365ed9;
+}
+
+.blog-card .card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #787878;
+}
+
+.blog-card .card-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+/* #FOOTER  */
+footer {
+  background-color: #00173d;
+  color: #fff;
+}
+
+.footer-top .logo a {
+  font-weight: 800;
+  font-size: 34px;
+  color: #fff;
+  margin-block-end: 15px;
+}
+
+.footer-top .text {
+  color: #b1bfd8;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-block-end: 15px;
+}
+
+.footer-top :is(.bx-time, .bx-map, .bx-phone, .bx-envelope) {
+  background-color: #365ed9;
+  padding: 12px;
+}
+
+.footer-top ul {
+  padding: 0;
+}
+
+.footer-top .title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.footer-top li a{
+  display: inline;
+  color: #b1bfd8;
+}
+
+.footer-bottom{
+  background-color: #081730;
+  color: #fff;
+}
+
+.footer-bottom .social-icons .bx{
+  background-color: #ffffff33;
+  padding: 10px;
+  transition: 0.25s ease;
+}
+
+.social-icons .bx:is(:hover, :focus){
+background-color: #365ed9;
+}
+
+/* #BACK TO TOP  */
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+.back-to-top .bx {
+  background: #365ed9;
+  color: #fff;
+}
